@@ -1,0 +1,442 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>635</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QWidget" name="widget" native="true">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>691</width>
+      <height>591</height>
+     </rect>
+    </property>
+    <widget class="QGroupBox" name="Controles">
+     <property name="geometry">
+      <rect>
+       <x>460</x>
+       <y>0</y>
+       <width>231</width>
+       <height>121</height>
+      </rect>
+     </property>
+     <property name="title">
+      <string>Controles</string>
+     </property>
+     <widget class="QPushButton" name="push_control_izquierda">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>60</y>
+        <width>71</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>&lt;</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="push_control_abajo">
+      <property name="geometry">
+       <rect>
+        <x>80</x>
+        <y>90</y>
+        <width>71</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>v</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="push_control_derecha">
+      <property name="geometry">
+       <rect>
+        <x>140</x>
+        <y>60</y>
+        <width>71</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>&gt;</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="push_control_arriba">
+      <property name="geometry">
+       <rect>
+        <x>80</x>
+        <y>30</y>
+        <width>71</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>^</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QGroupBox" name="groupBox">
+     <property name="geometry">
+      <rect>
+       <x>460</x>
+       <y>130</y>
+       <width>231</width>
+       <height>161</height>
+      </rect>
+     </property>
+     <property name="title">
+      <string>Tamaño</string>
+     </property>
+     <widget class="QLabel" name="label_columas">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>40</y>
+        <width>71</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Columnas</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_filas">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>70</y>
+        <width>59</width>
+        <height>14</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Filas</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_tam_columnas">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>100</y>
+        <width>91</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Tam columnas</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_tam_filas">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>130</y>
+        <width>91</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Tam filas</string>
+      </property>
+     </widget>
+     <widget class="QSpinBox" name="spin_columnas">
+      <property name="geometry">
+       <rect>
+        <x>130</x>
+        <y>40</y>
+        <width>81</width>
+        <height>20</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QSpinBox" name="spin_filas">
+      <property name="geometry">
+       <rect>
+        <x>130</x>
+        <y>70</y>
+        <width>81</width>
+        <height>20</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QSpinBox" name="spin_tam_filas">
+      <property name="geometry">
+       <rect>
+        <x>130</x>
+        <y>130</y>
+        <width>81</width>
+        <height>20</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QSpinBox" name="spin_tam_columnas">
+      <property name="geometry">
+       <rect>
+        <x>130</x>
+        <y>100</y>
+        <width>81</width>
+        <height>20</height>
+       </rect>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QGroupBox" name="groupBox_2">
+     <property name="geometry">
+      <rect>
+       <x>460</x>
+       <y>300</y>
+       <width>231</width>
+       <height>121</height>
+      </rect>
+     </property>
+     <property name="title">
+      <string>Servidor</string>
+     </property>
+     <widget class="QLabel" name="label_puerto_servidor">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>50</y>
+        <width>71</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Puerto</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_url">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>30</y>
+        <width>71</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Url</string>
+      </property>
+     </widget>
+     <widget class="QSpinBox" name="spin_puerto_servidor">
+      <property name="geometry">
+       <rect>
+        <x>110</x>
+        <y>50</y>
+        <width>101</width>
+        <height>20</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="line_url">
+      <property name="geometry">
+       <rect>
+        <x>110</x>
+        <y>30</y>
+        <width>101</width>
+        <height>16</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="push_levantar_servidor">
+      <property name="geometry">
+       <rect>
+        <x>60</x>
+        <y>80</y>
+        <width>111</width>
+        <height>22</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Levantar servidor</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QGroupBox" name="groupBox_3">
+     <property name="geometry">
+      <rect>
+       <x>460</x>
+       <y>430</y>
+       <width>231</width>
+       <height>121</height>
+      </rect>
+     </property>
+     <property name="title">
+      <string>Maestro</string>
+     </property>
+     <widget class="QLabel" name="label_puerto_maestro">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>50</y>
+        <width>71</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Puerto</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_url_servidor">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>30</y>
+        <width>71</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Url Servidor</string>
+      </property>
+     </widget>
+     <widget class="QSpinBox" name="spin_puerto_maestro">
+      <property name="geometry">
+       <rect>
+        <x>110</x>
+        <y>50</y>
+        <width>101</width>
+        <height>20</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="line_url_servidor">
+      <property name="geometry">
+       <rect>
+        <x>110</x>
+        <y>30</y>
+        <width>101</width>
+        <height>16</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="push_conectar">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>80</y>
+        <width>71</width>
+        <height>22</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Conectar</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="push_ping">
+      <property name="geometry">
+       <rect>
+        <x>130</x>
+        <y>80</y>
+        <width>81</width>
+        <height>22</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>¡Ping!</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QPushButton" name="push_empezar">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>560</y>
+       <width>431</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Empezar el juego</string>
+     </property>
+    </widget>
+    <widget class="QTableWidget" name="table_board">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>11</y>
+       <width>431</width>
+       <height>541</height>
+      </rect>
+     </property>
+     <property name="rowCount">
+      <number>10</number>
+     </property>
+     <property name="columnCount">
+      <number>10</number>
+     </property>
+     <attribute name="horizontalHeaderVisible">
+      <bool>false</bool>
+     </attribute>
+     <attribute name="horizontalHeaderDefaultSectionSize">
+      <number>20</number>
+     </attribute>
+     <attribute name="horizontalHeaderMinimumSectionSize">
+      <number>10</number>
+     </attribute>
+     <attribute name="verticalHeaderVisible">
+      <bool>false</bool>
+     </attribute>
+     <attribute name="verticalHeaderDefaultSectionSize">
+      <number>20</number>
+     </attribute>
+     <attribute name="verticalHeaderMinimumSectionSize">
+      <number>20</number>
+     </attribute>
+     <row/>
+     <row/>
+     <row/>
+     <row/>
+     <row/>
+     <row/>
+     <row/>
+     <row/>
+     <row/>
+     <row/>
+     <column/>
+     <column/>
+     <column/>
+     <column/>
+     <column/>
+     <column/>
+     <column/>
+     <column/>
+     <column/>
+     <column/>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>19</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuJuego_Snake">
+    <property name="title">
+     <string> </string>
+    </property>
+   </widget>
+   <addaction name="menuJuego_Snake"/>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
